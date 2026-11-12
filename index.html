@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerson José González Romero | Ingeniero en Informática</title>
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description" content="Tarjeta de Presentación Digital y Portafolio Ejecutivo de Emerson José González Romero - Ingeniero en Informática, Especialista en Soporte Técnico, CCTV, Redes y Automatización con IA.">
+  <meta name="author" content="Emerson José González Romero">
+  <meta property="og:title" content="Emerson José González Romero | Ingeniero en Informática">
+  <meta property="og:description" content="Portafolio profesional y tarjeta digital. Soporte técnico, redes, seguridad electrónica y desarrollo web con inteligencia artificial.">
+  <meta property="og:image" content="foto.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-main: #0B0F19;
+      --card-bg: rgba(17, 24, 39, 0.92);
+      --card-border: rgba(59, 130, 246, 0.22);
+      --accent-blue: #2563EB;
+      --accent-cyan: #06B6D4;
+      --accent-glow: rgba(37, 99, 235, 0.35);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+      --success: #10B981;
+      --whatsapp-green: #22C55E;
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.18) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(6, 182, 212, 0.15) 0px, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    /* Container Principal */
+    .card-container {
+      width: 100%;
+      max-width: 540px;
+      background: var(--card-bg);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--card-border);
+      border-radius: 28px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 35px var(--accent-glow);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    /* Header Ejecutivo */
+    .header-banner {
+      background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+      padding: 32px 20px 18px;
+      text-align: center;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .photo-wrapper {
+      position: relative;
+      width: 118px;
+      height: 118px;
+      margin: 0 auto 14px;
+    }
+
+    .photo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #38BDF8;
+      box-shadow: 0 0 24px rgba(56, 189, 248, 0.5);
+      background-color: #1E293B;
+      display: block;
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      background: #2563EB;
+      color: white;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #0F172A;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    .name-title {
+      font-family: var(--font-heading);
+      font-size: 1.38rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+      line-height: 1.25;
+    }
+
+    .role-tag {
+      display: inline-block;
+      background: linear-gradient(90deg, rgba(37,99,235,0.25), rgba(6,182,212,0.25));
+      border: 1px solid rgba(56, 189, 248, 0.45);
+      color: #38BDF8;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+
+    .degrees-text {
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      font-weight: 500;
+      line-height: 1.45;
+    }
+
+    /* Barra de Métricas Clave (KPIs) */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      padding: 12px 18px 4px;
+    }
+
+    .stat-card {
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 12px;
+      padding: 8px 4px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #38BDF8;
+      font-family: var(--font-heading);
+    }
+
+    .stat-label {
+      font-size: 0.60rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-top: 2px;
+    }
+
+    /* CTAs Principales */
+    .cta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      padding: 12px 18px 6px;
+    }
+
+    @media (max-width: 420px) {
+      .cta-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+    }
+
+    .btn-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 8px;
+      border-radius: 14px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+      white-space: nowrap;
+    }
+
+    .btn-github {
+      background: #1E293B;
+      color: #F8FAFC;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    }
+    .btn-github:hover {
+      background: #0F172A;
+      border-color: #38BDF8;
+      color: #38BDF8;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(56, 189, 248, 0.25);
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #10B981, #059669);
+      color: white;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+    }
+    .btn-whatsapp:hover {
+      background: linear-gradient(135deg, #059669, #047857);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(16, 185, 129, 0.45);
+    }
+
+    .btn-cv {
+      background: linear-gradient(135deg, #2563EB, #1D4ED8);
+      color: white;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    }
+    .btn-cv:hover {
+      background: linear-gradient(135deg, #1D4ED8, #1E40AF);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
+    }
+
+    /* Tabs de Navegación Segmentada */
+    .tab-nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      padding: 5px;
+      margin: 12px 18px 4px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 16px;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-size: 0.74rem;
+      font-weight: 600;
+      padding: 9px 2px;
+      border-radius: 11px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-family: inherit;
+    }
+
+    .tab-btn:hover {
+      color: #F8FAFC;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.45), rgba(6, 182, 212, 0.35));
+      color: #38BDF8;
+      border-color: rgba(56, 189, 248, 0.45);
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    }
+
+    /* Contenido de Tabs */
+    .tab-pane {
+      display: none;
+      padding: 18px 20px;
+    }
+    .tab-pane.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Secciones Comunes */
+    .section-title {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      color: var(--text-dim);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Badges de Clientes / Instituciones */
+    .client-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .badge-item {
+      background: rgba(30, 41, 59, 0.9);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #93C5FD;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 5px 11px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Lista de Competencias */
+    .skills-list {
+      list-style: none;
+      margin-bottom: 18px;
+    }
+
+    .skills-list li {
+      font-size: 0.78rem;
+      color: #CBD5E1;
+      padding: 5px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.45;
+    }
+
+    .bullet {
+      color: #38BDF8;
+      font-weight: bold;
+    }
+
+    /* Tarjetas de Casos & Heurísticas */
+    .case-card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(59, 130, 246, 0.22);
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 12px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .case-card:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .case-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      gap: 8px;
+    }
+
+    .case-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #F8FAFC;
+    }
+
+    .case-badge {
+      background: rgba(37, 99, 235, 0.25);
+      color: #38BDF8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      font-size: 0.64rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    .case-desc {
+      font-size: 0.74rem;
+      color: #CBD5E1;
+      line-height: 1.45;
+      margin-bottom: 8px;
+    }
+
+    .decision-rule {
+      background: rgba(30, 41, 59, 0.7);
+      border-left: 3px solid #06B6D4;
+      padding: 8px 10px;
+      border-radius: 0 8px 8px 0;
+      margin: 8px 0;
+      font-size: 0.72rem;
+      color: #E2E8F0;
+      line-height: 1.4;
+    }
+
+    .case-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .metric-chip {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34D399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    /* Contact Links */
+    .contact-box {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #E2E8F0;
+      text-decoration: none;
+      font-size: 0.8rem;
+      padding: 8px 10px;
+      border-radius: 10px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .contact-row:hover {
+      background: rgba(59, 130, 246, 0.15);
+      color: #38BDF8;
+      transform: translateX(3px);
+    }
+
+    .icon-wrap {
+      width: 34px;
+      height: 34px;
+      background: rgba(37, 99, 235, 0.2);
+      color: #38BDF8;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Caja de Pago Móvil & Fiscal */
+    .bank-card {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bank-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .bank-name {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #38BDF8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .bank-tag {
+      background: #2563EB;
+      color: white;
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    .bank-number-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .bank-number-box:hover {
+      border-color: #38BDF8;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .bank-number {
+      font-family: monospace;
+      font-size: 0.88rem;
+      color: #F8FAFC;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+
+    .copy-hint {
+      font-size: 0.7rem;
+      color: #94A3B8;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Galería de Documentos / Soportes */
+    .docs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .doc-item {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 12px 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .doc-item:hover {
+      border-color: #38BDF8;
+      background: rgba(30, 41, 59, 0.9);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(56, 189, 248, 0.15);
+    }
+
+    .doc-title {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #E2E8F0;
+    }
+
+    .doc-sub {
+      font-size: 0.65rem;
+      color: var(--text-dim);
+    }
+
+    /* Footer */
+    .card-footer {
+      padding: 16px 20px;
+      text-align: center;
+      background: rgba(15, 23, 42, 0.95);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.68rem;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #10B981;
+      color: white;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      pointer-events: none;
+    }
+    #toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Modal Visor */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+    }
+    .modal-backdrop.show {
+      display: flex;
+    }
+    .modal-content {
+      background: #1E293B;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      max-width: 92vw;
+      max-height: 90vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+      animation: modalZoom 0.25s ease;
+    }
+    @keyframes modalZoom {
+      from { transform: scale(0.92); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .modal-header {
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0F172A;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      gap: 12px;
+    }
+    .modal-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .modal-btn {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: #94A3B8;
+      border-radius: 6px;
+      padding: 4px 8px;
+      font-size: 0.72rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .modal-btn:hover {
+      color: #F8FAFC;
+      border-color: #38BDF8;
+    }
+    .modal-close {
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+      font-size: 1.4rem;
+      cursor: pointer;
+      padding: 0 4px;
+      line-height: 1;
+    }
+    .modal-close:hover {
+      color: #F8FAFC;
+    }
+    .modal-body {
+      padding: 12px;
+      overflow-y: auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-img {
+      max-width: 100%;
+      max-height: 72vh;
+      border-radius: 8px;
+      object-fit: contain;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+    
+    <!-- HEADER -->
+    <header class="header-banner">
+      <div class="photo-wrapper">
+        <img src="foto.jpeg" alt="Emerson José González Romero" class="photo-img" onerror="this.src='https://ui-avatars.com/api/?name=Emerson+Gonzalez&background=0D8ABC&color=fff&size=200'">
+        <div class="verified-badge" title="Perfil Profesional Verificado">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+      </div>
+
+      <h1 class="name-title">EMERSON JOSÉ GONZÁLEZ ROMERO</h1>
+      <div class="role-tag">Ingeniero en Informática</div>
+      <p class="degrees-text">
+        Ing. en Informática • T.S.U. en Informática (UPTJAA)<br>
+        Soporte Técnico Especializado • Redes & CCTV • Soluciones con Inteligencia Artificial
+      </p>
+    </header>
+
+    <!-- BARRA DE MÉTRICAS EJECUTIVAS -->
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-number">+20</div>
+        <div class="stat-label">Años Exp.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4+</div>
+        <div class="stat-label">FullStack</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3+</div>
+        <div class="stat-label">IA & Auto.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">SLA & Conf.</div>
+      </div>
+    </div>
+
+    <!-- CTAS PRINCIPALES -->
+    <div class="cta-grid">
+      <a href="https://github.com/emersongonz" target="_blank" class="btn-cta btn-github" title="Ver perfil en GitHub">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+        GitHub
+      </a>
+      <a href="https://wa.me/584126893506" target="_blank" class="btn-cta btn-whatsapp" title="Contactar por WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1 1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.15-1.19-.06-.1-.22-.16-.47-.28z"/>
+        </svg>
+        WhatsApp
+      </a>
+      <a href="CV_Emerson_Gonzalez_Ingeniero_Informatica.pdf" download class="btn-cta btn-cv" title="Descargar Currículum en PDF">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        CV
+      </a>
+    </div>
+
+    <!-- NAVEGACIÓN POR PESTAÑAS (4 TABS) -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" onclick="switchTab('resumen', this)">Perfil</button>
+      <button class="tab-btn" onclick="switchTab('metodologia', this)">Metodología</button>
+      <button class="tab-btn" onclick="switchTab('soportes', this)">Soportes</button>
+      <button class="tab-btn" onclick="switchTab('contacto', this)">Contacto</button>
+    </nav>
+
+    <!-- TAB 1: RESUMEN Y EXPERIENCIA -->
+    <section id="tab-resumen" class="tab-pane active">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+        Instituciones & Experiencia Destacada
+      </div>
+      <div class="client-badges">
+        <span class="badge-item">Alcaldía de Simón Rodríguez</span>
+        <span class="badge-item">Multiservicios NG Systems, C.A.</span>
+        <span class="badge-item">Video Vigila</span>
+        <span class="badge-item">Consultoría IT Independiente</span>
+        <span class="badge-item">Capacitación & Formación Técnica</span>
+      </div>
+
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        Competencias & Especialidades Clave
+      </div>
+      <ul class="skills-list">
+        <li>
+          <span class="bullet">•</span>
+          <div><strong>Soporte Técnico Integral & Hardware:</strong> Mantenimiento preventivo y correctivo avanzado en computadoras, laptops y servidores locales y web. Diagnóstico, reparación física y optimización de software.</div>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <div><strong>Infraestructura de Redes & CCTV:</strong> Instalación y configuración de circuitos cerrados de TV, cámaras IP, sistemas de control de acceso, alarmas y tendido de cableado estructurado LAN/WLAN.</div>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <div><strong>Desarrollo Web FullStack & FrontEnd:</strong> Creación de soluciones y componentes en Python, PHP, JavaScript, C++, HTML5/CSS3 e integración de bases de datos.</div>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <div><strong>Automatización & Inteligencia Artificial:</strong> Integración de agentes y herramientas de IA (ChatGPT, AutoGPT, Copilot, Zapier, Make) para automatizar procesos de soporte, desarrollo y flujos operativos.</div>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <div><strong>Multimedia & Marketing con IA:</strong> Producción y edición de contenido con Runway ML, Adobe Firefly, DALL-E, Midjourney y estrategias de posicionamiento digital.</div>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <div><strong>Docencia & Capacitación Tecnológica:</strong> Instructor en mantenimiento preventivo, sistemas de seguridad electrónica y formación práctica en herramientas digitales modernas.</div>
+        </li>
+      </ul>
+
+      <button class="btn-cta btn-cv" style="width:100%; margin-top:8px;" onclick="downloadVCard()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line></svg>
+        Guardar Contacto en el Teléfono (VCard)
+      </button>
+    </section>
+
+    <!-- TAB 2: METODOLOGÍA & CASOS DE ÉXITO -->
+    <section id="tab-metodologia" class="tab-pane">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+        Heurísticas y Casos de Éxito Probados
+      </div>
+
+      <!-- Caso 1: Alcaldía de Simón Rodríguez -->
+      <div class="case-card">
+        <div class="case-header">
+          <span class="case-title">Plataforma Unificada & Parque Informático</span>
+          <span class="case-badge">Alcaldía Simón Rodríguez</span>
+        </div>
+        <p class="case-desc">
+          Operador de proyectos informáticos a cargo de la infraestructura técnica de la institución. Desarrollo e implementación de una plataforma unificada de herramientas y componentes para agilizar la entrega de servicios municipales y optimizar el soporte a equipos y redes locales.
+        </p>
+        <div class="decision-rule">
+          <strong>Heurística Aplicada:</strong> <em>"Diagnóstico Preventivo + Estandarización de Componentes"</em>: Ningún equipo opera de forma aislada; se implementaron protocolos periódicos de revisión y mantenimiento que previenen cuellos de botella y fallas de red.
+        </div>
+        <div class="case-metrics">
+          <span class="metric-chip">+100 Estaciones en Funcionamiento</span>
+          <span class="metric-chip">Alta Disponibilidad LAN</span>
+          <span class="metric-chip">Procesos Asistidos con IA</span>
+        </div>
+      </div>
+
+      <!-- Caso 2: CCTV y Seguridad Electrónica -->
+      <div class="case-card">
+        <div class="case-header">
+          <span class="case-title">Seguridad Electrónica & Videovigilancia IP</span>
+          <span class="case-badge">NG Systems / Video Vigila</span>
+        </div>
+        <p class="case-desc">
+          Planificación, tendido de cableado estructurado e instalación masiva de sistemas de circuito cerrado (CCTV), alarmas perimetrales y cámaras de videovigilancia IP para clientes comerciales y residenciales.
+        </p>
+        <div class="decision-rule">
+          <strong>Regla de Ingeniería:</strong> <em>"Topología Redundante y Seguridad Sin Puntos Ciegos"</em>: Blindaje del enlace de datos, asignación eficiente de anchos de banda para streaming local/remoto y almacenamiento redundante de grabaciones críticas.
+        </div>
+        <div class="case-metrics">
+          <span class="metric-chip">100% Cobertura Visual</span>
+          <span class="metric-chip">Monitoreo Remoto Estable</span>
+          <span class="metric-chip">Cero Pérdida de Paquetes</span>
+        </div>
+      </div>
+
+      <!-- Caso 3: Automatización con IA y Soporte Ágil -->
+      <div class="case-card">
+        <div class="case-header">
+          <span class="case-title">Automatización con IA & Soporte Técnico Ágil</span>
+          <span class="case-badge">Consultoría Independiente</span>
+        </div>
+        <p class="case-desc">
+          Asistencia técnica personalizada a particulares y pymes. Integración de flujos automatizados con herramientas de IA (ChatGPT, AutoGPT, Zapier, Make) para acelerar la resolución de incidencias, generación de reportes y creación de contenido técnico publicitario.
+        </p>
+        <div class="decision-rule">
+          <strong>Heurística de Flujo:</strong> <em>"Automatizar lo Rutinario, Perfeccionar lo Crítico"</em>: Delegación de transcripciones y tareas repetitivas en agentes de software para enfocar el 100% del tiempo en análisis y ejecución de alto valor.
+        </div>
+        <div class="case-metrics">
+          <span class="metric-chip">-70% Tiempo en Procesos Repetitivos</span>
+          <span class="metric-chip">Respuesta Rápida a Fallas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: TITULOS Y SOPORTES -->
+    <section id="tab-soportes" class="tab-pane">
+      <div class="section-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+        Credenciales Universitarias y Certificados
+      </div>
+
+      <div class="docs-grid">
+        <!-- Título Ing. Informática -->
+        <div class="doc-item" onclick="openModal('Titulo_Ing_Informatica.jpg', 'Título: Ingeniero en Informática (UPTJAA)')">
+          <div class="icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          </div>
+          <div class="doc-title">Ing. Informática</div>
+          <div class="doc-sub">UPTJAA (2025)</div>
+        </div>
+
+        <!-- Título T.S.U. Informática -->
+        <div class="doc-item" onclick="openModal('Titulo_TSU_Informatica.jpg', 'Título: T.S.U. en Informática (UPTJAA)')">
+          <div class="icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          </div>
+          <div class="doc-title">T.S.U. Informática</div>
+          <div class="doc-sub">UPTJAA</div>
+        </div>
+
+        <!-- Certificado Ing. Software CNTI -->
+        <div class="doc-item" onclick="openModal('Cert_Ing_Software.jpg', 'Certificado: Introducción a la Ingeniería de Software (CNTI)')">
+          <div class="icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <div class="doc-title">Ing. de Software</div>
+          <div class="doc-sub">CNTI (2022)</div>
+        </div>
+
+        <!-- Certificado Didáctica y Docencia CNTI -->
+        <div class="doc-item" onclick="openModal('Cert_Didactica_Docencia.jpg', 'Certificado: Estrategias y Herramientas Didácticas en Enseñanza (CNTI)')">
+          <div class="icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <div class="doc-title">Cert. Docencia</div>
+          <div class="doc-sub">CNTI (2022)</div>
+        </div>
+
+        <!-- Certificado Google Digital Garage -->
+        <div class="doc-item" onclick="openModal('Cert_Google_Digital.jpg', 'Certificación: Competencias Digitales (Google Digital Garage)')">
+          <div class="icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <div class="doc-title">Google Garage</div>
+          <div class="doc-sub">Google Digital</div>
+        </div>
+
+        <!-- Certificado Derechos Humanos -->
+        <div class="doc-item" onclick="openModal('Cert_DDHH.jpg', 'Certificación: Defensor de los Derechos Humanos')">
+          <div class="icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <div class="doc-title">Defensor DDHH</div>
+          <div class="doc-sub">Derechos Humanos</div>
+        </div>
+
+        <!-- Comprobante RIF SENIAT -->
+        <div class="doc-item" onclick="openModal('Rif_Emerson.jpg', 'Registro Único de Información Fiscal (RIF SENIAT)')">
+          <div class="icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="7" y1="8" x2="17" y2="8"></line><line x1="7" y1="12" x2="17" y2="12"></line></svg>
+          </div>
+          <div class="doc-title">RIF SENIAT</div>
+          <div class="doc-sub">V-17870431-8</div>
+        </div>
+
+        <!-- Cédula de Identidad -->
+        <div class="doc-item" onclick="openModal('Cedula_Identidad.jpg', 'Cédula de Identidad Venezolana')">
+          <div class="icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><circle cx="8" cy="10" r="2"></circle><line x1="14" y1="7" x2="18" y2="7"></line><line x1="14" y1="11" x2="18" y2="11"></line></svg>
+          </div>
+          <div class="doc-title">Cédula Identidad</div>
+          <div class="doc-sub">V-17.870.431</div>
+        </div>
+      </div>
+
+      <!-- Descarga Directa de Documentos Originales -->
+      <div style="background: rgba(15,23,42,0.6); border:1px solid rgba(59,130,246,0.2); border-radius:14px; padding:12px; margin-top:8px;">
+        <div style="font-size:0.72rem; font-weight:700; color:#38BDF8; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Descarga de Expedientes en PDF
+        </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px;">
+          <a href="CV_Emerson_Gonzalez_Ingeniero_Informatica.pdf" download class="modal-btn" style="justify-content:center; padding:7px;">
+            📄 Currículum Vitae
+          </a>
+          <a href="ing.pdf" download class="modal-btn" style="justify-content:center; padding:7px;">
+            🎓 Título Universitario
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: CONTACTO Y DATOS FISCALES -->
+    <section id="tab-contacto" class="tab-pane">
+      <div class="section-title">Canales de Contacto Directo</div>
+      <div class="contact-box">
+        <!-- GitHub -->
+        <a href="https://github.com/emersongonz" target="_blank" class="contact-row">
+          <div class="icon-wrap" style="background:rgba(255,255,255,0.08); color:#F8FAFC;">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+          </div>
+          <div>
+            <div style="font-weight:600;">github.com/emersongonz</div>
+            <div style="font-size:0.68rem; color:var(--text-dim);">Repositorios & Proyectos de Software</div>
+          </div>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/584126893506" target="_blank" class="contact-row">
+          <div class="icon-wrap" style="background:rgba(16,185,129,0.2); color:#10B981;">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1 1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.15-1.19-.06-.1-.22-.16-.47-.28z"/>
+            </svg>
+          </div>
+          <div>
+            <div style="font-weight:600;">+58 0412-6893506</div>
+            <div style="font-size:0.68rem; color:var(--text-dim);">Llamadas & WhatsApp Directo</div>
+          </div>
+        </a>
+
+        <!-- Correo Electrónico -->
+        <a href="mailto:emersongonzjose@gmail.com" class="contact-row">
+          <div class="icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div>
+            <div style="font-weight:600;">emersongonzjose@gmail.com</div>
+            <div style="font-size:0.68rem; color:var(--text-dim);">Correo Electrónico</div>
+          </div>
+        </a>
+
+        <!-- Ubicación -->
+        <div class="contact-row">
+          <div class="icon-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div>
+            <div style="font-weight:600;">El Tigre, Edo. Anzoátegui</div>
+            <div style="font-size:0.68rem; color:var(--text-dim);">Sector San Francisco de Asís, Calle Panamá</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title">Datos para Pago Móvil & Transferencias</div>
+      
+      <!-- Card Pago Móvil -->
+      <div class="bank-card">
+        <div class="bank-header">
+          <span class="bank-name">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+            Pago Móvil Interbancario
+          </span>
+          <span class="bank-tag">PAGO MÓVIL</span>
+        </div>
+        <div class="bank-number-box" onclick="copyText('04126893506', '¡Teléfono Pago Móvil Copiado!')">
+          <span class="bank-number">0412-6893506</span>
+          <span class="copy-hint">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            Copiar
+          </span>
+        </div>
+        <div style="font-size:0.72rem; color:#94A3B8; margin-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span>Titular: Emerson J. González</span>
+          <span style="cursor:pointer; color:#38BDF8; font-weight:600;" onclick="copyText('17870431', '¡Cédula Copiada!')">
+            C.I. V-17.870.431 📋
+          </span>
+        </div>
+      </div>
+
+      <!-- Datos Fiscales RIF -->
+      <div class="bank-card" style="padding:12px 16px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div style="font-size:0.68rem; color:var(--text-dim); text-transform:uppercase; font-weight:700;">Registro Fiscal (RIF SENIAT)</div>
+            <div style="font-family:monospace; font-size:0.88rem; font-weight:700; color:#F8FAFC;">V-17870431-8</div>
+          </div>
+          <button class="btn-cta btn-cv" style="padding:6px 14px; font-size:0.72rem;" onclick="copyText('V178704318', '¡RIF Copiado!')">
+            Copiar RIF
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="card-footer">
+      Emerson José González Romero • Ingeniero en Informática • 2026<br>
+      <span style="font-size:0.62rem; color:var(--text-dim); opacity:0.8;">Soporte Técnico Especializado • Redes & CCTV • Soluciones con Inteligencia Artificial</span>
+    </footer>
+
+  </div>
+
+  <!-- TOAST NOTIFICACIÓN -->
+  <div id="toast">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-msg">¡Copiado con éxito!</span>
+  </div>
+
+  <!-- MODAL DE VISOR -->
+  <div id="docModal" class="modal-backdrop" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <span id="modal-title" style="font-size:0.85rem; font-weight:700; color:#38BDF8;">Título</span>
+        <div class="modal-actions">
+          <a id="modal-download" href="#" target="_blank" class="modal-btn" title="Abrir imagen completa">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            Ver Original
+          </a>
+          <button class="modal-close" onclick="closeModal()" title="Cerrar">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <img id="modal-image" src="" alt="Documento" class="modal-img">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      const targetPane = document.getElementById('tab-' + tabId);
+      if (targetPane) {
+        targetPane.classList.add('active');
+      }
+    }
+
+    function copyText(text, msg) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(msg);
+        }).catch(() => {
+          fallbackCopy(text, msg);
+        });
+      } else {
+        fallbackCopy(text, msg);
+      }
+    }
+
+    function fallbackCopy(text, msg) {
+      const tempInput = document.createElement('textarea');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast(msg);
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      if (toast && toastMsg) {
+        toastMsg.innerText = msg;
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 2400);
+      }
+    }
+
+    function downloadVCard() {
+      const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Emerson José González Romero
+N:González Romero;Emerson;José;;
+TITLE:Ingeniero en Informática
+TEL;TYPE=CELL:+584126893506
+EMAIL;TYPE=INTERNET:emersongonzjose@gmail.com
+URL:https://github.com/emersongonz
+ADR;TYPE=HOME:;;Sector San Francisco de Asís, Calle Panamá;El Tigre;Anzoátegui;6050;Venezuela
+NOTE:Ingeniero en Informática | Especialista en Soporte Técnico, CCTV, Redes y Soluciones con IA
+END:VCARD`;
+      const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Emerson_Gonzalez_Ingeniero_Informatica.vcf';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('¡Contacto VCard descargado!');
+    }
+
+    function openModal(imgSrc, title) {
+      const modal = document.getElementById('docModal');
+      const img = document.getElementById('modal-image');
+      const titleElem = document.getElementById('modal-title');
+      const downloadElem = document.getElementById('modal-download');
+      
+      if (img && titleElem && modal) {
+        img.src = imgSrc;
+        titleElem.innerText = title;
+        if (downloadElem) {
+          downloadElem.href = imgSrc;
+        }
+        modal.classList.add('show');
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('docModal');
+      if (modal) {
+        modal.classList.remove('show');
+      }
+    }
+
+    // Cerrar modal al presionar ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>
+
